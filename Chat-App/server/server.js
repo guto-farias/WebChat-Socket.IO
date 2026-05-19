@@ -33,7 +33,7 @@ io.on('connection', (socket) => {
             from: message.from,
             text: message.text,
             createdAt: new Date().getTime()
-        })
+        });
     });
 
     socket.on('disconnect', () => {
